@@ -73,10 +73,10 @@ const AboutMe = () => {
                     <div className="md:col-span-7">
                         <div className="text-lg text-muted-foreground max-w-[450px]">
                             <p className="slide-up-and-fade">
-                            Hi, I'm Cody, a Frontend Engineer who turns ideas into pixel-perfect experiences.
+                            Hi, I&apos;m Cody, a Frontend Engineer who turns ideas into pixel-perfect experiences.
                             </p>
                             <p className="mt-3 slide-up-and-fade">
-                            I'm all about creating mobile & web apps that are not just functional but fun to use!
+                            I&apos;m all about creating mobile & web apps that are not just functional but fun to use!
                             </p>
                         </div>
                     </div>

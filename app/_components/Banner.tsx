@@ -50,8 +50,8 @@ const Banner = () => {
                         <span className="font-medium text-foreground">
                             CODY
                         </span>
-                        . Hi, I'm Cody, a Frontend Engineer who turns ideas into pixel-perfect experiences.
-                        I'm all about creating mobile & web apps that are not just functional but fun to use!.
+                        . Hi, I&apos;m Cody, a Frontend Engineer who turns ideas into pixel-perfect experiences.
+                        I&apos;m all about creating mobile & web apps that are not just functional but fun to use!.
                     </p>
                     <Button
                         as="link"

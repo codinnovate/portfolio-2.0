@@ -11,7 +11,7 @@ export default function Home() {
             <AboutMe />
             <Skills />
             <Experiences />
-            <ProjectList />
+            {/* <ProjectList /> */}
         </div>
     );
 }

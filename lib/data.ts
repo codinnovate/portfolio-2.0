@@ -286,7 +286,7 @@ export const PROJECTS: IProject[] = [
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Frontend Engineer (Full Stack)',
+        title: 'Frontend Engineer (Mobile)',
         company: 'NumoAI (Contract)',
         duration: 'Jun 2025 - Present',
     },
@@ -302,13 +302,13 @@ export const MY_EXPERIENCE = [
     },
     {
         title: 'Frontend Engineer (Web)',
-        company: 'ShopTinga',
-        duration: 'Jan 2022 - Dec 2022',
+        company: 'Enyata',
+        duration: 'June 2022 - Nov 2023',
     },
     {
         title: 'Frontend Engineer',
         company: 'SmartTeller',
-        duration: 'Feb 2021 - Jun 2021',
+        duration: 'Feb 2021 - Jun 2022',
     },
    
 ];

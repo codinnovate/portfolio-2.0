@@ -15,7 +15,18 @@ export type Variant =
     | 'link'
     | 'no-color';
 
-export interface IProject {
+// Sanity image type
+export interface SanityImage {
+  _type: 'image';
+  asset: {
+    _ref: string;
+    _type: 'reference';
+  };
+  _key?: string;
+}
+
+// For static data (fallback)
+export interface StaticProject {
     title: string;
     year: number;
     description: string;
@@ -28,3 +39,20 @@ export interface IProject {
     liveUrl?: string;
     sourceCode?: string;
 }
+
+// For Sanity data
+export interface SanityProject {
+    title: string;
+    year: number;
+    description: string;
+    role: string;
+    techStack: string[];
+    thumbnail: SanityImage;
+    longThumbnail?: SanityImage;
+    images: SanityImage[];
+    slug: string;
+    liveUrl?: string;
+    sourceCode?: string;
+}
+
+export type IProject = SanityProject | StaticProject;

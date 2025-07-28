@@ -8,6 +8,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { ArrowLeft, ExternalLink, Github } from 'lucide-react';
 import { useRef } from 'react';
+import { getImageUrl, getImageKey } from '@/lib/image-utils';
 
 interface Props {
     project: IProject;
@@ -181,17 +182,17 @@ const ProjectDetails = ({ project }: Props) => {
                 >
                     {project.images.map((image) => (
                         <div
-                            key={image}
+                            key={getImageKey(image)}
                             className="group relative w-full aspect-[750/400] bg-background-light"
                             style={{
-                                backgroundImage: `url(${image})`,
+                                backgroundImage: `url(${getImageUrl(image, 800, 400)})`,
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center 50%',
                                 backgroundRepeat: 'no-repeat',
                             }}
                         >
                             <a
-                                href={image}
+                                href={getImageUrl(image)}
                                 target="_blank"
                                 className="absolute top-4 right-4 bg-background/70 text-foreground size-12 inline-flex justify-center items-center transition-all opacity-0 hover:bg-primary hover:text-primary-foreground group-hover:opacity-100"
                             >

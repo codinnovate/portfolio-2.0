@@ -111,9 +111,9 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'MTI Electronics',
-        slug: 'mti-electronics',
-        liveUrl: 'https://mti-electronics.vercel.app/',
+        title: 'PassPadi',
+        slug: 'passpadi',
+        liveUrl: 'https://passpadi.com/',
         year: 2025,
         description: `
       A complete agency portfolio platform built for MTI Electronics to showcase their services, blog content, and product offerings. <br/> <br/>

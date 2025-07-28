@@ -5,6 +5,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import Image from 'next/image';
 import { useRef } from 'react';
+import { getImageUrl } from '@/lib/image-utils';
 
 interface Props {
     index: number;
@@ -109,7 +110,7 @@ const Project = ({ index, project, selectedProject, onMouseEnter }: Props) => {
         >
             {selectedProject === null && (
                 <Image
-                    src={project.thumbnail}
+                    src={getImageUrl(project.thumbnail, 300, 200)}
                     alt="Project"
                     width="300"
                     height="200"
